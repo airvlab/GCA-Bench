@@ -5,6 +5,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
+CSS = ROOT / "static/css/index.css"
 
 EXPECTED_TEXT = [
     "MiGA Dataset",
@@ -13,14 +14,16 @@ EXPECTED_TEXT = [
     "103K",
     "5 gripper types",
     "36 tasks",
+    "Gripper embedding",
     "Multi-gripper tokenization",
     "Dual Mixture-of-Adapters",
     "Real-world Validation",
 ]
 
 EXPECTED_ASSETS = [
-    "5218_Gripper_aware_Vision_Lang_副本.pdf",
+    "GVLA-Gripper-aware-Vision-Language-Action-Models.pdf",
     "static/images/introduction.png",
+    "static/images/paper/fig-02-gripper-embedding.png",
     "static/images/paper/fig-03-task-categories.png",
     "static/images/paper/fig-04-dataset-statistics.png",
     "static/images/paper/fig-05-architecture.png",
@@ -30,6 +33,21 @@ EXPECTED_ASSETS = [
     "static/images/paper/table-01-dataset-comparison.png",
     "static/images/paper/table-02-baseline-comparison.png",
     "static/videos/GVLA Video.mp4",
+]
+
+EXPECTED_CSS_SELECTORS = [
+    ".teaser-image",
+    ".section-alt",
+    ".metric-grid",
+    ".metric-card",
+    ".method-points",
+    ".paper-figure",
+    ".figure-grid",
+    "@media",
+]
+
+EXPECTED_LINKS = [
+    "https://scholar.google.com/citations?hl=zh-CN&authuser=2&user=1VOV3lsAAAAJ",
 ]
 
 
@@ -59,6 +77,7 @@ def local_path(reference):
 def main():
     failures = []
     html = INDEX.read_text(encoding="utf-8")
+    css = CSS.read_text(encoding="utf-8")
     parser = SiteParser()
     parser.feed(html)
 
@@ -73,9 +92,17 @@ def main():
         if href == "#":
             failures.append("Found dead href=\"#\" link")
 
+    for link in EXPECTED_LINKS:
+        if link not in parser.links:
+            failures.append(f"Missing expected link: {link}")
+
     for asset in EXPECTED_ASSETS:
         if not (ROOT / asset).is_file():
             failures.append(f"Missing expected asset: {asset}")
+
+    for selector in EXPECTED_CSS_SELECTORS:
+        if selector not in css:
+            failures.append(f"Missing expected CSS selector/rule: {selector}")
 
     for reference in parser.images + parser.videos + parser.links:
         path = local_path(reference)

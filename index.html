@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-          content="GVLA: Gripper-aware Vision Language Action Models>"
+        content="GVLA: Gripper-aware Vision Language Action Models">
   <meta name="keywords" content="vision language action, robotic grasping, large-scale dataset, gripper-aware, manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GVLA: Gripper-aware Vision Language Action Models</title>
@@ -56,39 +56,39 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="#">Hanyi Zhang</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=2&user=1VOV3lsAAAAJ">Hanyi Zhang</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="#">Zihong Luo</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=2&user=8SLtiQgAAAAJ">Zihong Luo</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="#">Tianyu Li</a><sup>1</sup>,</span>
+              Tianyu Li<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="#">Khang Nguyen</a><sup>2</sup>,</span>
+              Khang Nguyen<sup>2</sup>,</span>
             <span class="author-block">
-              <a href="#">Basu Hela</a><sup>3</sup>,</span>
+              Basu Hela<sup>3</sup>,</span>
             <span class="author-block">
-              <a href="#">Shreyas Kumar</a><sup>3</sup>,</span>
+              Shreyas Kumar<sup>3</sup>,</span>
             <span class="author-block">
-              <a href="#">Ngoc Duy Tran</a><sup>3</sup>,</span>
+              Ngoc Duy Tran<sup>3</sup>,</span>
             <span class="author-block">
-              <a href="#">Feng Dai</a><sup>4</sup>,</span>
+              Feng Dai<sup>4</sup>,</span>
             <span class="author-block">
-              <a href="#">Charith Munasinghe</a><sup>5</sup>,</span>
+              Charith Munasinghe<sup>5</sup>,</span>
             <span class="author-block">
-              <a href="#">Jorge Peña Queralta</a><sup>5</sup>,</span>
+              Jorge Peña Queralta<sup>5</sup>,</span>
             <span class="author-block">
-              <a href="#">Giovanni Toffetti</a><sup>5</sup>,</span>
+              Giovanni Toffetti<sup>5</sup>,</span>
             <span class="author-block">
-              <a href="#">Khoa Vo</a><sup>6</sup>,</span>
+              Khoa Vo<sup>6</sup>,</span>
             <span class="author-block">
-              <a href="#">Ngan Le</a><sup>6</sup>,</span>
+              Ngan Le<sup>6</sup>,</span>
             <span class="author-block">
-              <a href="#">Ravi Prakash</a><sup>3</sup>,</span>
+              Ravi Prakash<sup>3</sup>,</span>
             <span class="author-block">
-              <a href="#">Quan Vuong</a><sup>7</sup>,</span>
+              Quan Vuong<sup>7</sup>,</span>
             <span class="author-block">
               <a href="https://scholar.google.co.jp/citations?user=KUqlbGUAAAAJ">Tung D. Ta</a><sup>4</sup>,</span>
             <span class="author-block">
-              <a href="#">Long Hu</a><sup>8</sup>,</span>
+              Long Hu<sup>8</sup>,</span>
             <span class="author-block">
               <a href="https://scholar.google.co.uk/citations?user=gEbaF0sAAAAJ">Anh Nguyen</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -109,41 +109,13 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- TODO: update with your actual links -->
               <span class="link-block">
-                <a href="#"
+                <a href="./GVLA-Gripper-aware-Vision-Language-Action-Models.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-database"></i>
-                  </span>
-                  <span>MiGA Dataset</span>
                 </a>
               </span>
             </div>
@@ -156,7 +128,7 @@
 </section>
 
 <div class="has-text-centered">
-  <img style="width: 50%;" src="./static/images/introduction.png">
+  <img class="teaser-image" src="./static/images/introduction.png" alt="GVLA and MiGA overview showing multi-gripper demonstrations in simulation and real-world settings">
 </div>
 
 <section class="section">
@@ -168,7 +140,7 @@
         <div class="content has-text-justified">
           <p>
             Vision language action models (VLAs) have advanced general purpose robotic grasping and manipulation by enabling robots to interpret visual observations and natural language instructions to generate executable action sequences. However, existing VLAs often implicitly assume gripper invariance, despite grasping strategies being inherently embodiment-dependent. Different gripper types, such as parallel-jaw and suction, usually require distinct interaction strategies to achieve the same grasping objective. Moreover, current datasets for VLAs predominantly rely on parallel-jaw grippers, limiting gripper-aware learning.
-            To address this gap, we introduce MiGA, a multi-gripper-aware dataset spanning five distinct gripper types across multiple robots with 103,000 demonstrations, explicitly capturing strategy divergence under shared task objectives. We further propose GVLA, which combines a new multi-gripper tokenizer with adapter-based policy routing. Our new gripper encoding induces structured embedding information that balances parameter sharing and strategy differentiation, while layer-wise probing confirms meaningful gripper-conditioned representations for VLAs. Intensive experiments in both simulation and real-world robots show that our GVLA outperforms the current baselines across evaluated settings. Our method also improves zero-shot generalization or few-shot adaptation to new objects or unseen tasks, and enable more efficient gripper adaptation. 
+            To address this gap, we introduce MiGA, a multi-gripper-aware dataset spanning five distinct gripper types across multiple robots with 103,000 demonstrations, explicitly capturing strategy divergence under shared task objectives. We further propose GVLA, which combines a new multi-gripper tokenizer with adapter-based policy routing. Our new gripper encoding induces structured embedding information that balances parameter sharing and strategy differentiation, while layer-wise probing confirms meaningful gripper-conditioned representations for VLAs. Intensive experiments in both simulation and real-world robots show that GVLA outperforms the current baselines across evaluated settings. Our method also improves zero-shot generalization or few-shot adaptation to new objects or unseen tasks, and enables more efficient gripper adaptation.
           </p>
         </div>
       </div>
@@ -190,181 +162,88 @@
   </div>
 </section>
 
-<!-- <section class="section">
+<section class="section section-alt" id="miga-dataset">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Dataset Collection Pipeline</h2>
-    
-
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./static/images/data-collection-pipeline.png" alt="Data collection pipeline">
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="content has-text-justified">
+      <h2 class="title is-3">MiGA Dataset</h2>
       <p>
-        We design a semi-automated data collection pipeline. Specifically, we collect and extract images, texts from scientific documents. In order to filter images related to robot design, we manually annotate 32K images and train a classification model. Next, we clean the extracted images with the trained model, resulting in robot design image-text pairs. In addition, we construct visual-instruction tuning data by using a high-performing open-sourced large language model to generate over 1M question-answer pairs.
+        MiGA is a multi-gripper-aware dataset with 103K demonstrations across 36 tasks, 5 gripper types, and both simulation and real-world robot setups. It captures how identical task objectives require different contact choices, approach directions, and execution strategies across gripper embodiments.
       </p>
+    </div>
+    <div class="metric-grid">
+      <div class="metric-card"><strong>103K</strong><span>Trajectories</span></div>
+      <div class="metric-card"><strong>5 gripper types</strong><span>Embodiments</span></div>
+      <div class="metric-card"><strong>36 tasks</strong><span>Task suite</span></div>
+      <div class="metric-card"><strong>Real + Sim</strong><span>Domains</span></div>
+    </div>
+    <figure class="paper-figure">
+      <img src="./static/images/paper/fig-03-task-categories.png" alt="Gripper-specific strategy variations across MiGA task categories">
+      <figcaption>Gripper-specific strategy variation across singulated, stacked, constrained, and semantic tasks.</figcaption>
+    </figure>
+    <div class="figure-grid">
+      <figure class="paper-figure">
+        <img src="./static/images/paper/fig-04-dataset-statistics.png" alt="MiGA dataset statistics">
+        <figcaption>MiGA balances task categories and gripper coverage across the dataset.</figcaption>
+      </figure>
+      <figure class="paper-figure">
+        <img src="./static/images/paper/table-01-dataset-comparison.png" alt="Comparison of MiGA with existing VLA datasets">
+        <figcaption>Compared with prior VLA datasets, MiGA explicitly covers gripper-specific solutions across real and simulated domains.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="method">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Dataset Statistics</h2>
     <div class="content has-text-justified">
+      <h2 class="title is-3">GVLA Method</h2>
       <p>
-        RobotDesign1M significantly covers a wide range of keywords and outperforms related datasets in terms of vocabulary size.
+        GVLA conditions a VLA backbone on gripper embodiment through Multi-gripper tokenization and a Dual Mixture-of-Adapters. Platform-, type-, and instance-level gripper tokens provide structured conditioning, while gripper and platform adapter pools route computation toward embodiment-specific policies.
       </p>
     </div>
-
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./static/images/dist_caption_len.png" alt="Caption length distribution">
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./static/images/unique-word.png" alt="Vocabulary size">
-          </div>
-        </div>
-      </div>
-      
-      <div class="column">
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./static/images/keyword-histogram.png" alt="Image keyword">
-          </div>
-        </div>
-      </div>
+    <div class="method-points">
+      <div><strong>Multi-gripper tokenization</strong><span>Encodes robot platform, gripper type, and gripper instance as learnable tokens.</span></div>
+      <div><strong>Dual Mixture-of-Adapters</strong><span>Routes action generation through platform- and gripper-aware adapter experts.</span></div>
     </div>
+    <figure class="paper-figure">
+      <img src="./static/images/paper/fig-02-gripper-embedding.png" alt="Gripper embedding heatmaps for different gripper representations">
+      <figcaption>Gripper embedding heatmaps show that the proposed tokenization produces more structured gripper representations than MLP, VQ-VAE, or language-prompt baselines.</figcaption>
+    </figure>
+    <figure class="paper-figure">
+      <img src="./static/images/paper/fig-05-architecture.png" alt="GVLA architecture overview">
+      <figcaption>GVLA injects gripper-aware tokens and adapter routing into the VLA action-generation pipeline.</figcaption>
+    </figure>
   </div>
 </section>
 
-<section class="section">
+<section class="section section-alt" id="results">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Samples</h2>
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="has-text-centered">
-          <img style="width: 70%;" src="./static/images/example-conversation.png">
-        </div>
-      </div>
+    <div class="content has-text-justified">
+      <h2 class="title is-3">Results</h2>
+      <p>
+        Across simulation and Real-world Validation, GVLA improves gripper-aware manipulation, zero-shot object generalization, and few-shot adaptation to new tasks or grippers.
+      </p>
+    </div>
+    <div class="figure-grid">
+      <figure class="paper-figure">
+        <img src="./static/images/paper/table-02-baseline-comparison.png" alt="Baseline comparison across GVLA task categories">
+        <figcaption>GVLA outperforms gripper-agnostic baselines across task categories.</figcaption>
+      </figure>
+      <figure class="paper-figure">
+        <img src="./static/images/paper/fig-08-cross-object-generalization.png" alt="Cross-object generalization success rates">
+        <figcaption>GVLA maintains stronger zero-shot transfer across unseen objects and grippers.</figcaption>
+      </figure>
+      <figure class="paper-figure">
+        <img src="./static/images/paper/fig-09-adaptation.png" alt="Task, gripper, and mixed-data adaptation results">
+        <figcaption>Gripper-aware conditioning enables more efficient few-shot task and gripper adaptation.</figcaption>
+      </figure>
+      <figure class="paper-figure">
+        <img src="./static/images/paper/fig-10-real-world-validation.png" alt="Real-world robotic validation setup and results">
+        <figcaption>Real-world Validation shows improved adaptation on a UR5 robot with a Robotiq 2F-85 gripper.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Dataset Samples</h2>
-    <div class="content has-text-justified">
-      <p>
-        A glimpse of image&ndash;text pairs from RobotDesign1M. Each sample pairs a robot design image with a generated question and answer. Use the arrows to browse left and right through the examples.
-      </p>
-    </div>
-    <div class="carousel results-carousel">
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-01.png" alt="Robot foot board design"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>What components make up the foot board design as shown in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>The foot board design includes the forefoot and the hind paw.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-02.png" alt="Bicycle fly wheel design"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>How are the fly wheels attached to the bicycle as illustrated in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>The fly wheels are connected by a developed fly wheel cage.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-03.png" alt="Footplate with lead screw rods"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>What is the purpose of the rods in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>The rods are lead screws, which can extend and shorten, leading to the posture change of the footplate.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-04.png" alt="Handling and positioning system"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>What mechanism is utilized in the system to achieve easy handling and positioning as shown in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>The system uses a lock system to achieve easy handling and positioning.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-05.png" alt="Linkage with twist angles"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>How are the twist angles of opposite links related in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>Opposite links have equal twist angle.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-06.png" alt="Picking head pillars"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>What is the difference in length between the leftwards and rightwards pillars in the picking head?</p>
-            <p class="sample-a"><span class="qa-label">A</span>The leftwards pillar is longer than the rightwards pillar.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-07.png" alt="Robot arm with degrees of freedom"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>How many degrees of freedom does each robot arm have as illustrated in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>Each arm has 4-DOF.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-08.png" alt="Tensile fastener design"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>What type of fastener is used in the target design to reduce assembly complexity?</p>
-            <p class="sample-a"><span class="qa-label">A</span>A rotationally activated tensile fastener is used.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-09.png" alt="Base with motors and gearboxes"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>What type of components are mounted on the base along with the motors in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>The figure shows gearboxes mounted on the base along with the motors.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="sample-card">
-          <div class="sample-img"><img src="./static/images/samples/design-10.png" alt="Snake-like robot gripper"></div>
-          <div class="sample-qa">
-            <p class="sample-q"><span class="qa-label">Q</span>What type of mechanisms are used to design the gripper of the snake-like robot as shown in the figure?</p>
-            <p class="sample-a"><span class="qa-label">A</span>The gripper is designed using two parallel four-bar mechanisms.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
