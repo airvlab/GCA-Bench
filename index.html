@@ -51,7 +51,7 @@
           <h1 class="title is-1 publication-title">GVLA: Gripper-aware Vision Language Action Models</h1>
           
           <h2 class="subtitle is-4 has-text-weight-semibold" style="margin-top: -10px; margin-bottom: 20px;">
-            🎉&nbsp; Accepted at IROS 2026 &nbsp;🎉
+            🎉&nbsp; Accepted at ECCV 2026 &nbsp;🎉
           </h2>
 
           <div class="is-size-5 publication-authors">
@@ -156,7 +156,7 @@
 </section>
 
 <div class="has-text-centered">
-  <img style="width: 30%;" src="./static/images/robot-design-topics.png">
+  <img style="width: 50%;" src="./static/images/introduction.png">
 </div>
 
 <section class="section">
@@ -167,7 +167,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Robot design is a complex and time-consuming process that requires specialized expertise. Gaining a deeper understanding of robot design data can enable various applications, including automated design generation, retrieving example designs from text, and developing AI-powered design assistants. While recent advancements in foundation models present promising approaches to addressing these challenges, progress in this field is hindered by the lack of large-scale design datasets. In this paper, we introduce RobotDesign1M, a large-scale dataset comprising 1 million samples. Our dataset features multimodal data collected from scientific literature, covering various robotics domains. We propose a semi-automated data collection pipeline, enabling efficient and diverse data acquisition. To assess the effectiveness of RobotDesign1M, we conduct extensive experiments across multiple tasks, including design image generation, visual question answering about designs, and design image retrieval. The results demonstrate that our dataset serves as a challenging new benchmark for design understanding tasks and has the potential to advance research in this field. RobotDesign1M will be released to support further developments in AI-driven robotic design automation.
+            Vision language action models (VLAs) have advanced general purpose robotic grasping and manipulation by enabling robots to interpret visual observations and natural language instructions to generate executable action sequences. However, existing VLAs often implicitly assume gripper invariance, despite grasping strategies being inherently embodiment-dependent. Different gripper types, such as parallel-jaw and suction, usually require distinct interaction strategies to achieve the same grasping objective. Moreover, current datasets for VLAs predominantly rely on parallel-jaw grippers, limiting gripper-aware learning.
+            To address this gap, we introduce MiGA, a multi-gripper-aware dataset spanning five distinct gripper types across multiple robots with 103,000 demonstrations, explicitly capturing strategy divergence under shared task objectives. We further propose GVLA, which combines a new multi-gripper tokenizer with adapter-based policy routing. Our new gripper encoding induces structured embedding information that balances parameter sharing and strategy differentiation, while layer-wise probing confirms meaningful gripper-conditioned representations for VLAs. Intensive experiments in both simulation and real-world robots show that our GVLA outperforms the current baselines across evaluated settings. Our method also improves zero-shot generalization or few-shot adaptation to new objects or unseen tasks, and enable more efficient gripper adaptation. 
           </p>
         </div>
       </div>
@@ -180,7 +181,7 @@
         <!-- <h2 class="title is-3">Video</h2> -->
         <div class="publication-video">
           <video id="teaser" autoplay="" controls="" muted="" loop="" playsinline="" width="100%" height="100%">
-            <source src="./static/videos/demo-robodesign1.mp4" type="video/mp4">
+            <source src="./static/videos/GVLA Video.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -189,7 +190,7 @@
   </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Dataset Collection Pipeline</h2>
     
@@ -376,7 +377,7 @@
   organization={IEEE}
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 <footer class="footer">
   <div class="container">
