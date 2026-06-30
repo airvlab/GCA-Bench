@@ -172,24 +172,18 @@
     </div>
     <div class="metric-grid">
       <div class="metric-card"><strong>103K</strong><span>Trajectories</span></div>
-      <div class="metric-card"><strong>5 gripper types</strong><span>Embodiments</span></div>
-      <div class="metric-card"><strong>36 tasks</strong><span>Task suite</span></div>
+      <div class="metric-card"><strong>5</strong><span>Gripper types</span></div>
+      <div class="metric-card"><strong>36</strong><span>Tasks</span></div>
       <div class="metric-card"><strong>Real + Sim</strong><span>Domains</span></div>
     </div>
     <figure class="paper-figure">
       <img src="./static/images/paper/fig-03-task-categories.png" alt="Gripper-specific strategy variations across MiGA task categories">
       <figcaption>Gripper-specific strategy variation across singulated, stacked, constrained, and semantic tasks.</figcaption>
     </figure>
-    <div class="figure-grid">
-      <figure class="paper-figure">
-        <img src="./static/images/paper/fig-04-dataset-statistics.png" alt="MiGA dataset statistics">
-        <figcaption>MiGA balances task categories and gripper coverage across the dataset.</figcaption>
-      </figure>
-      <figure class="paper-figure">
-        <img src="./static/images/paper/table-01-dataset-comparison.png" alt="Comparison of MiGA with existing VLA datasets">
-        <figcaption>Compared with prior VLA datasets, MiGA explicitly covers gripper-specific solutions across real and simulated domains.</figcaption>
-      </figure>
-    </div>
+    <figure class="paper-figure paper-figure-medium">
+      <img src="./static/images/paper/fig-04-dataset-statistics.png" alt="MiGA dataset statistics">
+      <figcaption>MiGA balances task categories and gripper coverage across the dataset.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -205,10 +199,6 @@
       <div><strong>Multi-gripper tokenization</strong><span>Encodes robot platform, gripper type, and gripper instance as learnable tokens.</span></div>
       <div><strong>Dual Mixture-of-Adapters</strong><span>Routes action generation through platform- and gripper-aware adapter experts.</span></div>
     </div>
-    <figure class="paper-figure">
-      <img src="./static/images/paper/fig-02-gripper-embedding.png" alt="Gripper embedding heatmaps for different gripper representations">
-      <figcaption>Gripper embedding heatmaps show that the proposed tokenization produces more structured gripper representations than MLP, VQ-VAE, or language-prompt baselines.</figcaption>
-    </figure>
     <figure class="paper-figure">
       <img src="./static/images/paper/fig-05-architecture.png" alt="GVLA architecture overview">
       <figcaption>GVLA injects gripper-aware tokens and adapter routing into the VLA action-generation pipeline.</figcaption>
