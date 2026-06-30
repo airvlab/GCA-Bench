@@ -1,8 +1,10 @@
 # GVLA
 
-This is the repository that contains source code for the [GVLA](https://airvlab.github.io/G-VLA/).
+This repository contains the project page for [GVLA: Gripper-aware Vision Language Action Models](https://airvlab.github.io/G-VLA/).
 
-If you find RobotDesign1M useful for your work please cite:
+GVLA studies gripper-aware vision-language-action modeling for robotic grasping and manipulation. The project page presents the MiGA multi-gripper dataset, the GVLA model design, experimental results, and the paper PDF.
+
+If you find GVLA or MiGA useful for your work, please cite:
 ```
 @inproceedings{zhang2026gvla,
   title={Gripper-aware Vision Language Action Models},
@@ -14,4 +16,5 @@ If you find RobotDesign1M useful for your work please cite:
 ```
 
 # Acknowledgement
+
 We borrow the page template from [nerfies website](https://github.com/nerfies/nerfies.github.io). Special thanks to them!
