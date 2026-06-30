@@ -440,12 +440,6 @@ body {
   line-height: 1.45;
 }
 
-.paper-figure-medium {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .figure-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
