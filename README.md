@@ -1,6 +1,6 @@
 # GVLA
 
-This is the repository that contains source code for the [GVLA](https://airvlab.github.io/gvlaweb/).
+This is the repository that contains source code for the [GVLA](https://airvlab.github.io/G-VLA/).
 
 If you find RobotDesign1M useful for your work please cite:
 ```
