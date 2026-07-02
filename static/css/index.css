@@ -68,6 +68,14 @@ body {
   padding: 0.45rem 1.2rem;
 }
 
+.publication-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: center;
+}
+
 .publication-links .button.is-dark {
   background-image: linear-gradient(135deg, var(--accent), #1d4ed8);
   border: 0;
@@ -80,6 +88,11 @@ body {
 .publication-links .button.is-dark:hover {
   box-shadow: 0 14px 28px -10px rgba(15, 118, 110, 0.72);
   transform: translateY(-2px);
+}
+
+.publication-links .button.is-placeholder {
+  opacity: 0.72;
+  pointer-events: none;
 }
 
 .teaser-image {
