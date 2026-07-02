@@ -1,20 +1,16 @@
-# GVLA
+# GCA-Bench
 
-This repository contains the project page for [GVLA: Gripper-aware Vision Language Action Models](https://airvlab.github.io/G-VLA/).
+Project page for **GCA-Bench: Beyond Visual Grasping, Benchmarking Complex Grasping from Detection to Execution**.
 
-GVLA studies gripper-aware vision-language-action modeling for robotic grasping and manipulation. The project page presents the MiGA multi-gripper dataset, the GVLA model design, experimental results, and the paper PDF.
+GCA-Bench evaluates complex robotic grasping across semantic reasoning, scene understanding, and trajectory-level execution. The page presents the benchmark design, dataset and environment setup, baseline results, real-world validation, and the paper PDF.
 
-If you find GVLA or MiGA useful for your work, please cite:
-```
-@inproceedings{zhang2026gvla,
-  title={Gripper-aware Vision Language Action Models},
-  author={Zhang, Hanyi and Luo, Zihong and Li, Tianyu and Nguyen, Khang and Hela, Basu and Kumar, Shreyas and Tran, Ngoc Duy and Dai, Feng and Munasinghe, Charith and Pe{\~n}a Queralta, Jorge and Toffetti, Giovanni and Vo, Khoa and Le, Ngan and Prakash, Ravi and Vuong, Quan and Ta, Tung D. and Hu, Long and Nguyen, Anh and Huang, Baoru},
-  booktitle={European Conference on Computer Vision (ECCV)},
+If you find this work useful, please cite:
+
+```bibtex
+@misc{zhang2026gcabench,
+  title={Beyond Visual Grasping: Benchmarking Complex Grasping from Detection to Execution},
+  author={Zhang, Hanyi and Nguyen, Khang and Munasinghe, Charith and Hela, Basu and Li, Tianyu and Luo, Zihong and Nguyen, Hoan and van de Venn, Hans Wernher and Zheng, Yalin and Prakash, Ravi and Ta, Tung D. and Nguyen, Anh and Huang, Baoru},
   year={2026},
-  organization={Springer}
+  note={Submitted to the 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
 }
 ```
-
-# Acknowledgement
-
-We borrow the page template from [nerfies website](https://github.com/nerfies/nerfies.github.io). Special thanks to them!

@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="GVLA: Gripper-aware Vision Language Action Models">
-  <meta name="keywords" content="vision language action, robotic grasping, large-scale dataset, gripper-aware, manipulation">
+        content="GCA-Bench: Beyond Visual Grasping, Benchmarking Complex Grasping from Detection to Execution">
+  <meta name="keywords" content="robotic grasping, complex grasping, benchmark, vision-language-action, semantic grasping, manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GVLA: Gripper-aware Vision Language Action Models</title>
+  <title>GCA-Bench: Beyond Visual Grasping</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -26,100 +26,51 @@
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
 </head>
 <body>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">GVLA: Gripper-aware Vision Language Action Models</h1>
-          
+          <h1 class="title is-1 publication-title">GCA-Bench: Beyond Visual Grasping</h1>
+
           <h2 class="subtitle is-4 has-text-weight-semibold" style="margin-top: -10px; margin-bottom: 20px;">
-            🎉&nbsp; Accepted at ECCV 2026 &nbsp;🎉
+            IROS 2026 Manuscript
           </h2>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=2&user=1VOV3lsAAAAJ">Hanyi Zhang</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=2&user=8SLtiQgAAAAJ">Zihong Luo</a><sup>1</sup>,</span>
-            <span class="author-block">
-              Tianyu Li<sup>1</sup>,</span>
-            <span class="author-block">
-              Khang Nguyen<sup>2</sup>,</span>
-            <span class="author-block">
-              Basu Hela<sup>3</sup>,</span>
-            <span class="author-block">
-              Shreyas Kumar<sup>3</sup>,</span>
-            <span class="author-block">
-              Ngoc Duy Tran<sup>3</sup>,</span>
-            <span class="author-block">
-              Feng Dai<sup>4</sup>,</span>
-            <span class="author-block">
-              Charith Munasinghe<sup>5</sup>,</span>
-            <span class="author-block">
-              Jorge Peña Queralta<sup>5</sup>,</span>
-            <span class="author-block">
-              Giovanni Toffetti<sup>5</sup>,</span>
-            <span class="author-block">
-              Khoa Vo<sup>6</sup>,</span>
-            <span class="author-block">
-              Ngan Le<sup>6</sup>,</span>
-            <span class="author-block">
-              Ravi Prakash<sup>3</sup>,</span>
-            <span class="author-block">
-              Quan Vuong<sup>7</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.co.jp/citations?user=KUqlbGUAAAAJ">Tung D. Ta</a><sup>4</sup>,</span>
-            <span class="author-block">
-              Long Hu<sup>8</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.co.uk/citations?user=gEbaF0sAAAAJ">Anh Nguyen</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=unbPvWAAAAAJ">Baoru Huang</a><sup>1</sup>
-            </span>
-          </div>
+          <p class="is-size-4 publication-subtitle">
+            Benchmarking Complex Grasping from Detection to Execution
+          </p>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Liverpool,</span>
-            <span class="author-block"><sup>2</sup>Mohamed bin Zayed University of Artificial Intelligence,</span>
-            <span class="author-block"><sup>3</sup>Indian Institute of Science,</span>
-            <span class="author-block"><sup>4</sup>The University of Tokyo,</span>
-            <span class="author-block"><sup>5</sup>Zürcher Hochschule für Angewandte Wissenschaften (ZHAW),</span>
-            <span class="author-block"><sup>6</sup>University of Arkansas,</span>
-            <span class="author-block"><sup>7</sup>Physical Intelligence,</span>
-            <span class="author-block"><sup>8</sup>Huazhong University of Science and Technology</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?hl=zh-CN&amp;authuser=2&amp;user=1VOV3lsAAAAJ">Hanyi Zhang</a>,</span>
+            <span class="author-block">Khang Nguyen,</span>
+            <span class="author-block">Charith Munasinghe,</span>
+            <span class="author-block">Basu Hela,</span>
+            <span class="author-block">Tianyu Li,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?hl=zh-CN&amp;authuser=2&amp;user=8SLtiQgAAAAJ">Zihong Luo</a>,</span>
+            <span class="author-block">Hoan Nguyen,</span>
+            <span class="author-block">Hans Wernher van de Venn,</span>
+            <span class="author-block">Yalin Zheng,</span>
+            <span class="author-block">Ravi Prakash,</span>
+            <span class="author-block">Tung D. Ta,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?hl=zh-CN&amp;authuser=2&amp;user=gEbaF0sAAAAJ">Anh Nguyen</a>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?hl=zh-CN&amp;authuser=2&amp;user=unbPvWAAAAAJ">Baoru Huang</a></span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="./GVLA-Gripper-aware-Vision-Language-Action-Models.pdf"
+                <a href="./GCA-Bench-Beyond-Visual-Grasping.pdf"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
                   <span>Paper</span>
                 </a>
               </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -128,80 +79,78 @@
 </section>
 
 <div class="has-text-centered">
-  <img class="teaser-image" src="./static/images/introduction.png" alt="GVLA and MiGA overview showing multi-gripper demonstrations in simulation and real-world settings">
+  <img class="teaser-image" src="./static/images/paper/gca-overview.png" alt="GCA-Bench overview showing instruction levels, scenario understanding, grasping actions, dataset sources, and complex trajectory stages">
 </div>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Vision language action models (VLAs) have advanced general purpose robotic grasping and manipulation by enabling robots to interpret visual observations and natural language instructions to generate executable action sequences. However, existing VLAs often implicitly assume gripper invariance, despite grasping strategies being inherently embodiment-dependent. Different gripper types, such as parallel-jaw and suction, usually require distinct interaction strategies to achieve the same grasping objective. Moreover, current datasets for VLAs predominantly rely on parallel-jaw grippers, limiting gripper-aware learning.
-            To address this gap, we introduce MiGA, a multi-gripper-aware dataset spanning five distinct gripper types across multiple robots with 103,000 demonstrations, explicitly capturing strategy divergence under shared task objectives. We further propose GVLA, which combines a new multi-gripper tokenizer with adapter-based policy routing. Our new gripper encoding induces structured embedding information that balances parameter sharing and strategy differentiation, while layer-wise probing confirms meaningful gripper-conditioned representations for VLAs. Intensive experiments in both simulation and real-world robots show that GVLA outperforms the current baselines across evaluated settings. Our method also improves zero-shot generalization or few-shot adaptation to new objects or unseen tasks, and enables more efficient gripper adaptation.
+            Robust robotic grasping remains a fundamental challenge for complex real-world applications. Existing benchmarks primarily focus on isolated visual grasp pose detection, leaving out tasks that require multi-step reasoning, semantic understanding, and reliable execution. GCA-Bench addresses this gap with challenging complex action scenarios that combine scene-level reasoning and semantic constraints. The benchmark evaluates recent foundation-model and grasping baselines under shared settings, with results showing success rates below 70% on complex grasping scenarios. GCA-Bench also introduces execution-aware metrics and failure analysis to guide more robust, generalizable grasping systems.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <!-- <h2 class="title is-3">Video</h2> -->
-        <div class="publication-video">
-          <video id="teaser" autoplay="" controls="" muted="" loop="" playsinline="" width="100%" height="100%">
-            <source src="./static/videos/GVLA Video.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
-<section class="section section-alt" id="miga-dataset">
+<section class="section section-alt" id="benchmark">
   <div class="container is-max-desktop">
     <div class="content has-text-justified">
-      <h2 class="title is-3">MiGA Dataset</h2>
+      <h2 class="title is-3">GCA-Bench Benchmark</h2>
       <p>
-        MiGA is a multi-gripper-aware dataset with 103K demonstrations across 36 tasks, 5 gripper types, and both simulation and real-world robot setups. It captures how identical task objectives require different contact choices, approach directions, and execution strategies across gripper embodiments.
+        GCA-Bench evaluates complex robotic grasping as a full pipeline rather than a single grasp pose prediction problem. It combines language instructions, semantic and scene understanding, trajectory-level execution, and task-specific constraints across 102 grasping tasks in singulated, cluttered, constrained, and semantic scenarios.
       </p>
     </div>
     <div class="metric-grid">
-      <div class="metric-card"><strong>103K</strong><span>Trajectories</span></div>
-      <div class="metric-card"><strong>5</strong><span>Gripper types</span></div>
-      <div class="metric-card"><strong>36</strong><span>Tasks</span></div>
-      <div class="metric-card"><strong>Real + Sim</strong><span>Domains</span></div>
+      <div class="metric-card"><strong>102</strong><span>Grasping tasks</span></div>
+      <div class="metric-card"><strong>4</strong><span>Scenario groups</span></div>
+      <div class="metric-card"><strong>3</strong><span>Instruction levels</span></div>
+      <div class="metric-card"><strong>Sim + Real</strong><span>Data sources</span></div>
     </div>
     <figure class="paper-figure">
-      <img src="./static/images/paper/fig-03-task-categories.png" alt="Gripper-specific strategy variations across MiGA task categories">
-      <figcaption>Gripper-specific strategy variation across singulated, stacked, constrained, and semantic tasks.</figcaption>
+      <img src="./static/images/paper/gca-scenario-design.png" alt="GCA-Bench scenario design with singulated, cluttered, constrained, and semantic scenes">
+      <figcaption>Scenario design covers singulated objects, cluttered layouts, constrained spaces, and semantic tasks that require following language instructions.</figcaption>
     </figure>
     <figure class="paper-figure">
-      <img src="./static/images/paper/fig-04-dataset-statistics.png" alt="MiGA dataset statistics">
-      <figcaption>MiGA balances task categories and gripper coverage across the dataset.</figcaption>
+      <img src="./static/images/paper/gca-task-metrics.png" alt="GCA-Bench task design and evaluation metrics">
+      <figcaption>Tasks evaluate semantic understanding, scene understanding, and staged task execution. Metrics include Detection Success Rate, Grasp Success Rate, Task Success Rate, SPL, and Execution Time.</figcaption>
     </figure>
   </div>
 </section>
 
-<section class="section" id="method">
+<section class="section" id="data">
   <div class="container is-max-desktop">
     <div class="content has-text-justified">
-      <h2 class="title is-3">GVLA Method</h2>
+      <h2 class="title is-3">Data and Environment</h2>
       <p>
-        GVLA conditions a VLA backbone on gripper embodiment through Multi-gripper tokenization and a Dual Mixture-of-Adapters. Platform-, type-, and instance-level gripper tokens provide structured conditioning, while gripper and platform adapter pools route computation toward embodiment-specific policies.
+        The benchmark uses NVIDIA Isaac Lab with a Franka Emika Panda setup and four RGB-D viewpoints: wrist, front, side, and over-the-shoulder. For fine-tuning and analysis, the dataset includes manually demonstrated trajectories with 2000 simulation trajectories and 800 trajectories from real robots.
       </p>
     </div>
     <div class="method-points">
-      <div><strong>Multi-gripper tokenization</strong><span>Encodes robot platform, gripper type, and gripper instance as learnable tokens.</span></div>
-      <div><strong>Dual Mixture-of-Adapters</strong><span>Routes action generation through platform- and gripper-aware adapter experts.</span></div>
+      <div><strong>Complex trajectory collection</strong><span>Demonstrations include successful and failed trials, multi-stage actions, object state changes, and gripper commands.</span></div>
+      <div><strong>Execution-aware grasping</strong><span>Tasks require preparatory pushes, safe approach paths, collision avoidance, and post-grasp stabilization.</span></div>
     </div>
     <figure class="paper-figure">
-      <img src="./static/images/paper/fig-05-architecture.png" alt="GVLA architecture overview">
-      <figcaption>GVLA injects gripper-aware tokens and adapter routing into the VLA action-generation pipeline.</figcaption>
+      <img src="./static/images/paper/gca-action-complexity.png" alt="Collected trajectories showing complex cluttered grasping actions">
+      <figcaption>Complex cluttered scenes require trajectory planning beyond visual grasp detection, including clearing surrounding objects and preparing better grasping poses.</figcaption>
+    </figure>
+    <div class="figure-grid">
+      <figure class="paper-figure">
+        <img src="./static/images/paper/gca-real-world-setup.png" alt="Real-world validation setup across singulated, clutter, constrained, and semantic tasks">
+        <figcaption>Real-world Setup pairs simulation scenarios with UR5 robot validation tasks across the four benchmark categories.</figcaption>
+      </figure>
+      <figure class="paper-figure">
+        <img src="./static/images/paper/gca-real-world-collection.png" alt="Real-world data collection setup with Franka Panda, SO-ARM 100, UR5, wrist camera, and third-view camera">
+        <figcaption>Real-world Collection uses Franka Panda, SO-ARM 100, and UR5 robots with wrist-mounted and third-view cameras.</figcaption>
+      </figure>
+    </div>
+    <figure class="paper-figure figure-compact">
+      <img src="./static/images/paper/gca-simulation-setup.png" alt="Isaac Lab simulation setup with multiple cameras and diverse assets">
+      <figcaption>Simulation environments combine multi-camera observations with diverse objects, shelves, baskets, and other constrained-space assets.</figcaption>
     </figure>
   </div>
 </section>
@@ -211,26 +160,37 @@
     <div class="content has-text-justified">
       <h2 class="title is-3">Results</h2>
       <p>
-        Across simulation and Real-world Validation, GVLA improves gripper-aware manipulation, zero-shot object generalization, and few-shot adaptation to new tasks or grippers.
+        GCA-Bench compares grasp detection pipelines, motion-planning variants, and VLA policies. Detection-based methods remain brittle in complex scenes, while fine-tuned VLA models improve results but still degrade as task complexity increases, especially under semantic constraints.
       </p>
     </div>
+    <figure class="paper-figure">
+      <img src="./static/images/paper/gca-baseline-comparison.png" alt="Comparison of baseline methods on GCA-Bench">
+      <figcaption>Overall baseline comparison across singulated, cluttered, constrained-space, and semantic task categories.</figcaption>
+    </figure>
     <div class="figure-grid">
       <figure class="paper-figure">
-        <img src="./static/images/paper/table-02-baseline-comparison.png" alt="Baseline comparison across GVLA task categories">
-        <figcaption>GVLA outperforms gripper-agnostic baselines across task categories.</figcaption>
+        <img src="./static/images/paper/gca-scenario-results.png" alt="Evaluation results across different GCA-Bench scenarios">
+        <figcaption>Scenario-level results show sharp drops in flat objects, stacked clutter, packed clutter, baskets, and shelves.</figcaption>
       </figure>
       <figure class="paper-figure">
-        <img src="./static/images/paper/fig-08-cross-object-generalization.png" alt="Cross-object generalization success rates">
-        <figcaption>GVLA maintains stronger zero-shot transfer across unseen objects and grippers.</figcaption>
+        <img src="./static/images/paper/gca-instruction-results.png" alt="Instruction following results across basic, simple constraint, and high-level instructions">
+        <figcaption>Instruction-following results separate basic grasping from simple constraints and high-level semantic goals.</figcaption>
       </figure>
       <figure class="paper-figure">
-        <img src="./static/images/paper/fig-09-adaptation.png" alt="Task, gripper, and mixed-data adaptation results">
-        <figcaption>Gripper-aware conditioning enables more efficient few-shot task and gripper adaptation.</figcaption>
+        <img src="./static/images/paper/gca-real-world-results.png" alt="Real-world performance compared with simulation baseline">
+        <figcaption>Real-world validation broadly follows simulation trends, with semantic tasks reaching the highest success rate.</figcaption>
       </figure>
-      <figure class="paper-figure">
-        <img src="./static/images/paper/fig-10-real-world-validation.png" alt="Real-world robotic validation setup and results">
-        <figcaption>Real-world Validation shows improved adaptation on a UR5 robot with a Robotiq 2F-85 gripper.</figcaption>
-      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="conclusion">
+  <div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3">Takeaways</h2>
+      <p>
+        GCA-Bench exposes a persistent gap between perception and reliable execution. Even when targets are detected, stable grasping can fail because of occlusion, thin or slippery objects, constrained motion, missing feedback, and semantic constraints such as preserving balance or avoiding unsafe contact. The benchmark is designed to support future evaluation of closed-loop, language-conditioned, and execution-aware robotic grasping systems.
+      </p>
     </div>
   </div>
 </section>
@@ -238,21 +198,20 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{zhang2026gvla,
-      title={Gripper-aware Vision Language Action Models},
-      author={Zhang, Hanyi and Luo, Zihong and Li, Tianyu and Nguyen, Khang and Hela, Basu and Kumar, Shreyas and Tran, Ngoc Duy and Dai, Feng and Munasinghe, Charith and Pe{\~n}a Queralta, Jorge and Toffetti, Giovanni and Vo, Khoa and Le, Ngan and Prakash, Ravi and Vuong, Quan and Ta, Tung D. and Hu, Long and Nguyen, Anh and Huang, Baoru},
-      booktitle={European Conference on Computer Vision (ECCV)},
+    <pre><code>@misc{zhang2026gcabench,
+      title={Beyond Visual Grasping: Benchmarking Complex Grasping from Detection to Execution},
+      author={Zhang, Hanyi and Nguyen, Khang and Munasinghe, Charith and Hela, Basu and Li, Tianyu and Luo, Zihong and Nguyen, Hoan and van de Venn, Hans Wernher and Zheng, Yalin and Prakash, Ravi and Ta, Tung D. and Nguyen, Anh and Huang, Baoru},
       year={2026},
-      organization={Springer}
+      note={Submitted to the 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
     }</code></pre>
   </div>
-</section> 
+</section>
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <p>
-        We borrow the page template from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>. Special thanks to them!
+        This page presents the GCA-Bench project and paper materials.
       </p>
     </div>
   </div>
