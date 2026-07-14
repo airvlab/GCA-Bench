@@ -1,6 +1,8 @@
-# GCA-Bench https://airvlab.github.io/GCA-Bench/
+# GCA-Bench 
 
 Project page for **GCA-Bench: Beyond Visual Grasping, Benchmarking Complex Grasping from Detection to Execution**.
+
+https://airvlab.github.io/GCA-Bench/
 
 GCA-Bench evaluates complex robotic grasping across semantic reasoning, scene understanding, and trajectory-level execution. The page presents the benchmark design, dataset and environment setup, baseline results, real-world validation, and the paper PDF.
 
