@@ -1,4 +1,4 @@
-# GCA-Bench
+# GCA-Bench https://airvlab.github.io/GCA-Bench/
 
 Project page for **GCA-Bench: Beyond Visual Grasping, Benchmarking Complex Grasping from Detection to Execution**.
 
