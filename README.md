@@ -1,6 +1,6 @@
 # GCA-Bench 
 
-Project page for **GCA-Bench: Beyond Visual Grasping, Benchmarking Complex Grasping from Detection to Execution**.
+Project page for **GCA-Bench: Beyond Visual Grasping, Benchmarking Complex Grasping from Detection to Execution, IROS 2026**.
 
 https://airvlab.github.io/GCA-Bench/
 
